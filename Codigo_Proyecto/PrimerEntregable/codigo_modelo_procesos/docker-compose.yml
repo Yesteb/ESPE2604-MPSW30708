@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: postgres
+
+    ports:
+      - "5433:5432"
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: contra
+      POSTGRES_DB: inventory_system
+
+    volumes:
+      - ./data:/var/lib/postgresql
