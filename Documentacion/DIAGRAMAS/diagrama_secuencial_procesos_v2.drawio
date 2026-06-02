@@ -1,0 +1,468 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama Secuencial - PinkyPuff" id="seq-pinkypuff-v2">
+    <mxGraphModel dx="1096" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2350" pageHeight="2400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+<mxCell id="ll_admin" value="Administrador" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;participant=umlActor;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="40" y="40" width="30" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_login" value="Interfaz de Login" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="200" y="40" width="120" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_regprod" value="Interfaz Registrar Producto" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="420" y="40" width="150" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_pedido" value="Interfaz Gestionar Pedido" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="700" y="40" width="150" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_cliente" value="Interfaz Gestionar Cliente" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="980" y="40" width="150" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_stats" value="Interfaz Estadísticas de Venta" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="1260" y="40" width="150" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_cat" value="Interfaz Categorías y Etiquetas" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="1540" y="40" width="160" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_config" value="Interfaz Configuración de Credenciales" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="1820" y="40" width="170" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="ll_bd" value="Base de Datos (PostgreSQL)" parent="1" vertex="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;align=center;verticalAlign=top;spacingTop=2;">
+  <mxGeometry x="2100" y="40" width="170" height="2280" as="geometry" />
+</mxCell>
+<mxCell id="c1" value="RF01 — Iniciar Sesión" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="100" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c2" value="Precondición: el equipo de desarrollo generó usuario y contraseña.
+Postcondición: acceso concedido, se muestra el Dashboard." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="220" y="92" width="360" height="46" as="geometry" />
+</mxCell>
+<mxCell id="c3" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="255.0" y="150" width="10" height="80" as="geometry" />
+</mxCell>
+<mxCell id="c4" value="1. ingresar usuario y contraseña" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="150" as="sourcePoint" />
+    <mxPoint x="260.0" y="150" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c5" value="2. validar credenciales (consulta)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="260.0" y="180" as="sourcePoint" />
+    <mxPoint x="2185.0" y="180" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c6" value="credenciales válidas" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="210" as="sourcePoint" />
+    <mxPoint x="260.0" y="210" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c7" value="acceso concedido / mostrar Dashboard" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="260.0" y="240" as="sourcePoint" />
+    <mxPoint x="55.0" y="240" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c8" value="RF02 — Registrar Producto" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="270" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c9" value="Postcondición: si el cliente no existe se crea uno nuevo; si no tiene pedido pendiente se crea uno nuevo y se le asocia el producto." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="600" y="262" width="420" height="46" as="geometry" />
+</mxCell>
+<mxCell id="c10" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="490.0" y="320" width="10" height="320" as="geometry" />
+</mxCell>
+<mxCell id="c11" value="1. etiquetas, precio, cantidad, nombre cliente, descripción (opcional)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="320" as="sourcePoint" />
+    <mxPoint x="495.0" y="320" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c12" value="2. consultar si existe el cliente (por nombre)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="495.0" y="350" as="sourcePoint" />
+    <mxPoint x="2185.0" y="350" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c13" value="resultado consulta cliente" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="380" as="sourcePoint" />
+    <mxPoint x="495.0" y="380" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c14" value="opt  [el cliente no existe]" parent="1" vertex="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=60;height=22;fontSize=10;fontStyle=1;align=left;verticalAlign=top;fillColor=none;strokeColor=#9673A6;">
+  <mxGeometry x="465.0" y="406" width="1750.0" height="78" as="geometry" />
+</mxCell>
+<mxCell id="c15" value="registrar nuevo cliente" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="495.0" y="432" as="sourcePoint" />
+    <mxPoint x="2185.0" y="432" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c16" value="cliente creado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="462" as="sourcePoint" />
+    <mxPoint x="495.0" y="462" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c17" value="3. consultar pedido pendiente del cliente" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="495.0" y="488" as="sourcePoint" />
+    <mxPoint x="2185.0" y="488" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c18" value="resultado consulta pedido" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="518" as="sourcePoint" />
+    <mxPoint x="495.0" y="518" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c19" value="opt  [el cliente no tiene pedido pendiente]" parent="1" vertex="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=60;height=22;fontSize=10;fontStyle=1;align=left;verticalAlign=top;fillColor=none;strokeColor=#9673A6;">
+  <mxGeometry x="465.0" y="544" width="1750.0" height="78" as="geometry" />
+</mxCell>
+<mxCell id="c20" value="registrar nuevo pedido" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="495.0" y="570" as="sourcePoint" />
+    <mxPoint x="2185.0" y="570" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c21" value="pedido creado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="600" as="sourcePoint" />
+    <mxPoint x="495.0" y="600" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c22" value="4. guardar producto y asociarlo al pedido" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="495.0" y="626" as="sourcePoint" />
+    <mxPoint x="2185.0" y="626" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c23" value="producto registrado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="656" as="sourcePoint" />
+    <mxPoint x="495.0" y="656" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c24" value="confirmar registro del producto" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="495.0" y="686" as="sourcePoint" />
+    <mxPoint x="55.0" y="686" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c25" value="RF03 — Gestionar Pedido" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="680" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c26" value="Precondición: existen cliente y pedido registrados.
+Acciones: filtrar por estado, eliminar producto, cambiar estado, eliminar pedido, generar reporte PDF." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="980" y="672" width="420" height="46" as="geometry" />
+</mxCell>
+<mxCell id="c27" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="770.0" y="730" width="10" height="280" as="geometry" />
+</mxCell>
+<mxCell id="c28" value="1. abrir gestión de pedidos" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="730" as="sourcePoint" />
+    <mxPoint x="775.0" y="730" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c29" value="2. consultar pedidos (filtrar: Pendiente/Cobrado/Cancelado)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="775.0" y="760" as="sourcePoint" />
+    <mxPoint x="2185.0" y="760" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c30" value="lista de pedidos" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="790" as="sourcePoint" />
+    <mxPoint x="775.0" y="790" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c31" value="mostrar lista de pedidos" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="775.0" y="820" as="sourcePoint" />
+    <mxPoint x="55.0" y="820" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c32" value="3. eliminar producto / cambiar estado / eliminar pedido" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="856" as="sourcePoint" />
+    <mxPoint x="775.0" y="856" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c33" value="actualizar / eliminar pedido" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="775.0" y="886" as="sourcePoint" />
+    <mxPoint x="2185.0" y="886" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c34" value="cambios guardados" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="916" as="sourcePoint" />
+    <mxPoint x="775.0" y="916" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c35" value="mostrar confirmación" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="775.0" y="946" as="sourcePoint" />
+    <mxPoint x="55.0" y="946" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c36" value="4. generar reporte (PDF)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="982" as="sourcePoint" />
+    <mxPoint x="775.0" y="982" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c37" value="reporte PDF generado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="775.0" y="1012" as="sourcePoint" />
+    <mxPoint x="55.0" y="1012" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c38" value="RF04 — Gestionar Clientes" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="1050" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c39" value="El cliente se crea automáticamente al registrar un pedido (RF02). Aquí se modifican sus datos y estado: Activo, Inactivo, Bloqueado." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="980" y="1042" width="420" height="46" as="geometry" />
+</mxCell>
+<mxCell id="c40" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="1050.0" y="1100" width="10" height="220" as="geometry" />
+</mxCell>
+<mxCell id="c41" value="1. abrir lista de clientes" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1100" as="sourcePoint" />
+    <mxPoint x="1055.0" y="1100" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c42" value="2. consultar clientes" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1055.0" y="1130" as="sourcePoint" />
+    <mxPoint x="2185.0" y="1130" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c43" value="lista de clientes" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="1160" as="sourcePoint" />
+    <mxPoint x="1055.0" y="1160" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c44" value="mostrar clientes" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1055.0" y="1190" as="sourcePoint" />
+    <mxPoint x="55.0" y="1190" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c45" value="3. modificar nombre/email/dirección/contacto/estado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1226" as="sourcePoint" />
+    <mxPoint x="1055.0" y="1226" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c46" value="actualizar datos del cliente" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1055.0" y="1256" as="sourcePoint" />
+    <mxPoint x="2185.0" y="1256" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c47" value="cliente actualizado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="1286" as="sourcePoint" />
+    <mxPoint x="1055.0" y="1286" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c48" value="mostrar confirmación" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1055.0" y="1316" as="sourcePoint" />
+    <mxPoint x="55.0" y="1316" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c49" value="RF05 — Visualizar Estadísticas de Venta" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="1360" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c50" value="Postcondición: el reporte PDF se genera en la carpeta por defecto." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="1260" y="1352" width="380" height="38" as="geometry" />
+</mxCell>
+<mxCell id="c51" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="1330.0" y="1410" width="10" height="210" as="geometry" />
+</mxCell>
+<mxCell id="c52" value="1. abrir estadísticas de venta" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1410" as="sourcePoint" />
+    <mxPoint x="1335.0" y="1410" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c53" value="2. seleccionar filtro (mes / año)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1440" as="sourcePoint" />
+    <mxPoint x="1335.0" y="1440" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c54" value="3. consultar pedidos cobrados" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1335.0" y="1470" as="sourcePoint" />
+    <mxPoint x="2185.0" y="1470" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c55" value="datos de ventas" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="1500" as="sourcePoint" />
+    <mxPoint x="1335.0" y="1500" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c56" value="mostrar gráficos (productos más vendidos / totales por cliente)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1335.0" y="1530" as="sourcePoint" />
+    <mxPoint x="55.0" y="1530" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c57" value="4. generar reporte (PDF)" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1566" as="sourcePoint" />
+    <mxPoint x="1335.0" y="1566" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c58" value="reporte generado en carpeta por defecto" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1335.0" y="1596" as="sourcePoint" />
+    <mxPoint x="55.0" y="1596" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c59" value="RF06 — Gestionar Categorías y Etiquetas" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="1660" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c60" value="Precondición: no debe existir otro registro con el mismo nombre (se valida antes de guardar)." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="1540" y="1652" width="420" height="46" as="geometry" />
+</mxCell>
+<mxCell id="c61" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="1615.0" y="1710" width="10" height="270" as="geometry" />
+</mxCell>
+<mxCell id="c62" value="1. abrir categorías y etiquetas" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1710" as="sourcePoint" />
+    <mxPoint x="1620.0" y="1710" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c63" value="2. ingresar nombre de categoría / etiqueta" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1740" as="sourcePoint" />
+    <mxPoint x="1620.0" y="1740" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c64" value="3. verificar que el nombre no exista" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1620.0" y="1770" as="sourcePoint" />
+    <mxPoint x="2185.0" y="1770" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c65" value="nombre disponible" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="1800" as="sourcePoint" />
+    <mxPoint x="1620.0" y="1800" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c66" value="registrar categoría / etiqueta" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1620.0" y="1830" as="sourcePoint" />
+    <mxPoint x="2185.0" y="1830" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c67" value="registro confirmado" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="1860" as="sourcePoint" />
+    <mxPoint x="1620.0" y="1860" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c68" value="visualizar en registro de productos" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1620.0" y="1890" as="sourcePoint" />
+    <mxPoint x="55.0" y="1890" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c69" value="4. eliminar categoría / etiqueta" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="1926" as="sourcePoint" />
+    <mxPoint x="1620.0" y="1926" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c70" value="eliminar categoría / etiqueta" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1620.0" y="1956" as="sourcePoint" />
+    <mxPoint x="2185.0" y="1956" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c71" value="eliminación confirmada" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="1986" as="sourcePoint" />
+    <mxPoint x="1620.0" y="1986" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c72" value="mostrar confirmación" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1620.0" y="2016" as="sourcePoint" />
+    <mxPoint x="55.0" y="2016" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c73" value="RF07 — Configuración de Credenciales del Administrador" parent="1" vertex="1" style="text;html=1;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;fontColor=#1F4E79;">
+  <mxGeometry x="40" y="2020" width="600" height="22" as="geometry" />
+</mxCell>
+<mxCell id="c74" value="Precondición: debe existir un registro del usuario que se va a modificar." parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;fontSize=10;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;">
+  <mxGeometry x="1820" y="2012" width="380" height="38" as="geometry" />
+</mxCell>
+<mxCell id="c75" parent="1" vertex="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;">
+  <mxGeometry x="1900.0" y="2070" width="10" height="220" as="geometry" />
+</mxCell>
+<mxCell id="c76" value="1. abrir configuración" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="2070" as="sourcePoint" />
+    <mxPoint x="1905.0" y="2070" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c77" value="2. ingresar usuario o email para buscar" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="2100" as="sourcePoint" />
+    <mxPoint x="1905.0" y="2100" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c78" value="3. buscar credenciales del administrador" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1905.0" y="2130" as="sourcePoint" />
+    <mxPoint x="2185.0" y="2130" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c79" value="retornar credenciales" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="2160" as="sourcePoint" />
+    <mxPoint x="1905.0" y="2160" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c80" value="4. modificar contraseña / email / usuario" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="55.0" y="2190" as="sourcePoint" />
+    <mxPoint x="1905.0" y="2190" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c81" value="guardar nuevas credenciales" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1905.0" y="2220" as="sourcePoint" />
+    <mxPoint x="2185.0" y="2220" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c82" value="credenciales actualizadas" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="2185.0" y="2250" as="sourcePoint" />
+    <mxPoint x="1905.0" y="2250" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+<mxCell id="c83" value="confirmar actualización" parent="1" edge="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;">
+  <mxGeometry relative="1" as="geometry">
+    <mxPoint x="1905.0" y="2280" as="sourcePoint" />
+    <mxPoint x="55.0" y="2280" as="targetPoint" />
+  </mxGeometry>
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
